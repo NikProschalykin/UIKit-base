@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="I8I-hR-cuu">
+                                <rect key="frame" x="0.0" y="132" width="375" height="535"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="VrU-DL-uhI"/>
+                                    <constraint firstAttribute="height" constant="535" id="tav-xD-X4p"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Memorise with my &quot;Кот&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5B-iR-Mdh">
+                                <rect key="frame" x="16" y="33" width="343" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.060463271554748288" green="0.16726949577157746" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.98386245969999997" green="0.60083103179999997" blue="0.64714115859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="l5B-iR-Mdh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="1uY-Tv-LmU"/>
+                            <constraint firstAttribute="bottom" secondItem="I8I-hR-cuu" secondAttribute="bottom" id="3G5-Hl-dsS"/>
+                            <constraint firstItem="I8I-hR-cuu" firstAttribute="top" secondItem="l5B-iR-Mdh" secondAttribute="bottom" constant="49" id="ALm-TF-fNO"/>
+                            <constraint firstItem="l5B-iR-Mdh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Cu0-p4-pmW"/>
+                            <constraint firstItem="I8I-hR-cuu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="E6j-ka-yer"/>
+                            <constraint firstItem="I8I-hR-cuu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="d7H-jT-hy3"/>
+                            <constraint firstItem="I8I-hR-cuu" firstAttribute="top" secondItem="l5B-iR-Mdh" secondAttribute="bottom" constant="49" id="eKq-Ai-tOJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l5B-iR-Mdh" secondAttribute="trailing" constant="16" id="mcA-iP-3nZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ImageView" destination="I8I-hR-cuu" id="niz-Na-pZA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55.200000000000003" y="3.1484257871064472"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="1620" height="2160"/>
+    </resources>
+</document>
